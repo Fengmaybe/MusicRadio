@@ -1,0 +1,378 @@
+/*基本樣式*/
+html, body, h1, h2, h3, h4, h5, h6, p, span, div, ul, li, a, img {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+a, input, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  /*頭部的頂部*/
+  #header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*相当于width：100%;*/
+    right: 0;
+    width: 100%;
+    height: 2.70rem;
+    background-color: #232323;
+    z-index: 200;
+    /*頂部的上部分 */
+    .headerTop {
+      width: 100%;
+      height: 1.35rem;
+      /*logo部分*/
+      .logo {
+        float: left;
+        width: 2.4rem;
+        height: .88rem;
+        padding: .26rem .17rem .21rem .17rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      /*菜單欄部分*/
+      .menuBtn {
+        float: left;
+        width: 1.29rem;
+        height: 1.35rem;
+        background-image: url("../img/menuBtn.png");
+        background-size: .82rem 2.33rem;
+        background-repeat: no-repeat;
+        background-position: center .16rem;
+
+        &.menuBtnClose {
+          background-position: center .16rem;
+        }
+        &.menuBtnOpen {
+          background-position: center -1.2rem;
+        }
+      }
+
+      /*按鈕排*/
+      .btns {
+        padding-top: .21rem;
+        float: right;
+
+        & > a {
+          float: left;
+          width: 1.11rem;
+          height: .78rem;
+          line-height: .78rem;
+          background-color: #690;
+          color: #ccc;
+          margin-right: .15rem;
+          font-size: .42rem;
+          text-align: center;
+          border-radius: .08rem;
+
+          &:first-child {
+            width: 1.3rem;
+            height: .88rem;
+            line-height: .88rem;
+            color: #fff;
+            margin-right: .3rem;
+            padding-top: .03rem;
+            font-weight: bold;
+            border-radius: .1rem;
+          }
+        }
+      }
+
+    }
+
+    /*頂部的下部分 搜索框*/
+    .search {
+      height: 1.03rem;
+      padding: .16rem;
+      input[type="text"] {
+        float: left;
+        box-sizing: border-box;
+        width: 8.29rem;
+        height: 1.03rem;
+        background-color: #999;
+        padding: .05rem .2rem;
+        border: 1px solid #5a5a5a;
+        font-size: .41rem;
+        border-radius: .15rem 0 0 .15rem;
+        &:focus {
+          background-color: white;
+        }
+        &::-webkit-input-placeholder {
+          color: #333333;
+        }
+      }
+      input[type="submit"] {
+        float: right;
+        box-sizing: border-box;
+        width: 2.03rem;
+        height: 1.03rem;
+        border-radius: 0 .15rem .15rem 0;
+        color: #fff;
+        background-color: #414040;
+
+      }
+
+    }
+
+    /*遮罩層*/
+    .mask {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 1.35rem;
+      padding: .1rem 0;
+      border-top: 1px solid #6a6a6a;
+      background-color: rgba(0, 0, 0, .8);
+      z-index: 20;
+
+      & > li {
+        /*這裡子元素浮動不需要考慮高度塌陷，因為父元素為絕對定位，開啟了BFC*/
+        float: left;
+        width: 25%;
+        height: 1.35rem;
+        line-height: 1.35rem;
+        font-size: .54rem;
+        font-weight: bold;
+        text-align: center;
+        & > a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  /*内容区域*/
+  #content {
+    padding-top: 2.7rem;
+
+    /*导航*/
+    .conNav {
+      box-sizing: border-box;
+      padding: .31rem 0 .14rem;
+      height: 1.77rem;
+      .conList {
+        /*这个相当于UL，让其宽度被子元素撑开-浮动或定位。省略号不换行*/
+        float: left;
+        white-space: nowrap;
+        font-size: 0;
+        li {
+          display: inline-block;
+          height: 1.29rem;
+          line-height: 1.29rem;
+          padding: 0 .38rem;
+          font-size: .50rem;
+          text-align: center;
+          & > a {
+            color: #020202;
+          }
+          &.active {
+            background-color: #690;
+            & > a {
+              color: #fff;
+
+            }
+          }
+        }
+      }
+    }
+
+    /*轮播*/
+    #picWrap {
+      position: relative;
+      .list {
+        position: absolute;
+        & > li {
+          float: left;
+          & img {
+            width: 100%;
+
+          }
+        }
+      }
+      .indicator {
+        width: 100%;
+        height: 10px;
+        line-height: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 6px;
+        text-align: center;
+        span {
+          /*转为行内块去解决他们之间的间隙*/
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: gray;
+          vertical-align: middle;
+          &.active {
+            background-color: deeppink;
+          }
+        }
+      }
+    }
+
+    /*tab选项卡*/
+    .tab {
+      width: 10.46rem;
+      background-color: #fff;
+      margin: 0 auto;
+      /*去掉tab两边的loading的一些外边*/
+      overflow: hidden;
+      /*tab頭部*/
+      .tabHeader {
+        height: 1.35rem;
+        line-height: 1.35rem;
+        overflow: hidden;
+        h2 {
+          float: left;
+          font-size: 23px;
+        }
+        & > a {
+          float: right;
+          color: black;
+          font-size: 15px;
+        }
+      }
+      /*tab導航*/
+      .tabNav {
+        position: relative;
+        height: 1.05rem;
+        line-height: 1.05rem;
+        overflow: hidden;
+        & > a {
+          float: left;
+          height: 1.05rem;
+          width: 1.2rem;
+          font-size: .44rem;
+          text-align: center;
+          color: #6b6b6b;
+
+        }
+        .smallG {
+          width: 1.2rem;
+          height: .09rem;
+          background-color: #6f900d;
+          position: absolute;
+          left: 0;
+          bottom: 3px;
+        }
+      }
+
+      /*tab 包裹區域*/
+      .tabWrap {
+        overflow: hidden;
+        /*這個百分比是相當於總的父容器tab來說 -- 363一個百分比*/
+        width: 300%;
+        .tabList {
+          float: left;
+          overflow: hidden;
+          /*這個百分比是相當於tabWrap*/
+          width: 33.33333333%;
+          & > li {
+            box-sizing: border-box;
+            width: 5.06rem;
+            margin: .08rem;
+            padding: .05rem;
+            font-size: .4rem;
+            background-color: #efefef;
+            float: left;
+            /*省略號···文本處理---要添加到父容器上哦！！*/
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            & > a {
+              color: #000;
+              & > img {
+                width: 100%;
+              }
+            }
+            .ice {
+              overflow: hidden;
+              .iceLeft {
+                float: left;
+                margin-right: 10px;
+                .icePic {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 14px;
+                  height: 12px;
+                  background-image: url("../img/ice.png");
+                  background-repeat: no-repeat;
+                }
+              }
+              .iceRight {
+                float: left;
+                .icePic {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 14px;
+                  height: 12px;
+                  background-image: url("../img/ice.png");
+                  background-repeat: no-repeat;
+                  background-position: 0px -20px;
+                }
+              }
+            }
+          }
+        }
+        .loading {
+          float: left;
+          width: 33.3333333%;
+          height: 1.01rem;
+          background-image: url("../img/loading.gif");
+          background-repeat: no-repeat;
+          background-position: center;
+          opacity: 0;
+        }
+
+      }
+    }
+  }
+
+}
+
+#scrollBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  background-color: deeppink;
+  opacity: 0;
+  transition: .5s opacity;
+  z-index: 300;
+}

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>音樂台</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="wrap">
+    <!--总体部分1：头部-->
+    <header id="header">
+        <!--头部顶部-->
+        <section class="headerTop">
+            <!--LOGO-->
+            <h1 class="logo">
+                <a href="javascript:;">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </h1>
+            <!--菜單欄-->
+            <a href="javascript:;" class="menuBtn menuBtnClose"></a>
+            <!--按鈕排-->
+            <div class="btns">
+                <a href="javascript">搜索</a>
+                <a href="javascript">登錄</a>
+                <a href="javascript">註冊</a>
+            </div>
+        </section>
+        <!--頭部搜索頂部-->
+        <form class="search">
+            <input type="text" placeholder="請輸入搜索內容···">
+            <input type="submit" value="搜索">
+        </form>
+        <!--遮罩层-->
+        <ul class="mask">
+            <li><a href="javascript:;">首頁</a></li>
+            <li><a href="javascript:;">MV</a></li>
+            <li><a href="javascript:;">悅單</a></li>
+            <li><a href="javascript:;">V榜</a></li>
+            <li><a href="javascript:;">音樂</a></li>
+            <li><a href="javascript:;">商城</a></li>
+            <li><a href="javascript:;">節日</a></li>
+            <li><a href="javascript:;">飯糰</a></li>
+            <li><a href="javascript:;">資訊</a></li>
+            <li><a href="javascript:;">E家</a></li>
+            <li><a href="javascript:;">APP下載</a></li>
+            <li><a href="javascript:;">熱門應用</a></li>
+        </ul>
+    </header>
+    <!--內容區-->
+    <div id="conWrap">
+    <section id="content">
+        <!--导航-->
+        <nav class="conNav">
+            <ul class="conList">
+                <li class="active"><a href="javascript:;">首頁</a></li>
+                <li><a href="javascript:;">MV</a></li>
+                <li><a href="javascript:;">悅單</a></li>
+                <li><a href="javascript:;">V榜</a></li>
+                <li><a href="javascript:;">音樂</a></li>
+                <li><a href="javascript:;">商城</a></li>
+                <li><a href="javascript:;">節日</a></li>
+                <li><a href="javascript:;">飯糰</a></li>
+                <li><a href="javascript:;">資訊</a></li>
+                <li><a href="javascript:;">E家</a></li>
+                <li><a href="javascript:;">APP下載</a></li>
+                <li><a href="javascript:;">熱門應用</a></li>
+            </ul>
+        </nav>
+        <!--轮播-->
+        <div id="picWrap">
+            <ul class="list">
+                <li><a href="javascript:;"><img src="./img/1.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/2.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/3.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/4.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/5.jpg" alt=""></a></li>
+            </ul>
+            <div class="indicator">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--tab选项卡-->
+        <section class="tab">
+            <!--头部-->
+            <header class="tabHeader">
+                <h2>MV首播</h2>
+                <a href="javascript:;">更多&gt;</a>
+            </header>
+            <!--导航-->
+            <nav class="tabNav">
+                <a href="javascript:;">全國</a>
+                <a href="javascript:;">內地</a>
+                <a href="javascript:;">港台</a>
+                <a href="javascript:;">歐美</a>
+                <a href="javascript:;">韓國</a>
+                <a href="javascript:;">朝鮮</a>
+                <!--小綠條-->
+                <div class="smallG"></div>
+            </nav>
+            <!--tab包裹區域-->
+            <div class="tabWrap">
+                <!--loading-->
+                <ul class="loading"></ul>
+                <!--列表區域-->
+                <ul class="tabList">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/a.jpg" alt="">
+                            <span>一起轟趴 Hong-PA</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>878</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/b.jpg" alt="">
+                            <span>太陽的後裔再次開拍，熱粉不斷···</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>9900</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>279</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/c.jpg" alt="">
+                            <span>井大2018屆軟件班畢業指定歌曲</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>6690</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>128</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/d.jpg" alt="">
+                            <span>蕭敬騰、林宥嘉新推合作單曲，我有多麼喜歡你</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.1W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>468</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/e.jpg" alt="">
+                            <span>【一周音樂排行版】第26期 那些年，北京的凌晨四點半</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>2.2W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>2288</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/f.jpg" alt="">
+                            <span>最新收錄 Emmy Rossum 艾米.罗萨姆</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>868</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--loading-->
+                <ul class="loading"></ul>
+            </div>
+        </section>
+        <section class="tab">
+            <!--头部-->
+            <header class="tabHeader">
+                <h2>MV首播</h2>
+                <a href="javascript:;">更多&gt;</a>
+            </header>
+            <!--导航-->
+            <nav class="tabNav">
+                <a href="javascript:;">全國</a>
+                <a href="javascript:;">內地</a>
+                <a href="javascript:;">港台</a>
+                <a href="javascript:;">歐美</a>
+                <a href="javascript:;">韓國</a>
+                <a href="javascript:;">朝鮮</a>
+                <!--小綠條-->
+                <div class="smallG"></div>
+            </nav>
+            <!--tab包裹區域-->
+            <div class="tabWrap">
+                <!--loading-->
+                <ul class="loading"></ul>
+                <!--列表區域-->
+                <ul class="tabList">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/a.jpg" alt="">
+                            <span>君に贈る花がない君君に贈る花がない君君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/b.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/c.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/d.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/e.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/f.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--loading-->
+                <ul class="loading"></ul>
+            </div>
+        </section>
+        <section class="tab">
+            <!--头部-->
+            <header class="tabHeader">
+                <h2>MV首播</h2>
+                <a href="javascript:;">更多&gt;</a>
+            </header>
+            <!--导航-->
+            <nav class="tabNav">
+                <a href="javascript:;">全國</a>
+                <a href="javascript:;">內地</a>
+                <a href="javascript:;">港台</a>
+                <a href="javascript:;">歐美</a>
+                <a href="javascript:;">韓國</a>
+                <a href="javascript:;">朝鮮</a>
+                <!--小綠條-->
+                <div class="smallG"></div>
+            </nav>
+            <!--tab包裹區域-->
+            <div class="tabWrap">
+                <!--loading-->
+                <ul class="loading"></ul>
+                <!--列表區域-->
+                <ul class="tabList">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/a.jpg" alt="">
+                            <span>君に贈る花がない君君に贈る花がない君君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/b.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/c.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/d.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/e.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/f.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--loading-->
+                <ul class="loading"></ul>
+            </div>
+        </section>
+        <section class="tab">
+            <!--头部-->
+            <header class="tabHeader">
+                <h2>MV首播</h2>
+                <a href="javascript:;">更多&gt;</a>
+            </header>
+            <!--导航-->
+            <nav class="tabNav">
+                <a href="javascript:;">全國</a>
+                <a href="javascript:;">內地</a>
+                <a href="javascript:;">港台</a>
+                <a href="javascript:;">歐美</a>
+                <a href="javascript:;">韓國</a>
+                <a href="javascript:;">朝鮮</a>
+                <!--小綠條-->
+                <div class="smallG"></div>
+            </nav>
+            <!--tab包裹區域-->
+            <div class="tabWrap">
+                <!--loading-->
+                <ul class="loading"></ul>
+                <!--列表區域-->
+                <ul class="tabList">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/a.jpg" alt="">
+                            <span>君に贈る花がない君君に贈る花がない君君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/b.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/c.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/d.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/e.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/f.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--loading-->
+                <ul class="loading"></ul>
+            </div>
+        </section>
+        <section class="tab">
+            <!--头部-->
+            <header class="tabHeader">
+                <h2>MV首播</h2>
+                <a href="javascript:;">更多&gt;</a>
+            </header>
+            <!--导航-->
+            <nav class="tabNav">
+                <a href="javascript:;">全國</a>
+                <a href="javascript:;">內地</a>
+                <a href="javascript:;">港台</a>
+                <a href="javascript:;">歐美</a>
+                <a href="javascript:;">韓國</a>
+                <a href="javascript:;">朝鮮</a>
+                <!--小綠條-->
+                <div class="smallG"></div>
+            </nav>
+            <!--tab包裹區域-->
+            <div class="tabWrap">
+                <!--loading-->
+                <ul class="loading"></ul>
+                <!--列表區域-->
+                <ul class="tabList">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/a.jpg" alt="">
+                            <span>君に贈る花がない君君に贈る花がない君君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/b.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/c.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/d.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/e.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/f.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--loading-->
+                <ul class="loading"></ul>
+            </div>
+        </section>
+        <section class="tab">
+            <!--头部-->
+            <header class="tabHeader">
+                <h2>MV首播</h2>
+                <a href="javascript:;">更多&gt;</a>
+            </header>
+            <!--导航-->
+            <nav class="tabNav">
+                <a href="javascript:;">全國</a>
+                <a href="javascript:;">內地</a>
+                <a href="javascript:;">港台</a>
+                <a href="javascript:;">歐美</a>
+                <a href="javascript:;">韓國</a>
+                <a href="javascript:;">朝鮮</a>
+                <!--小綠條-->
+                <div class="smallG"></div>
+            </nav>
+            <!--tab包裹區域-->
+            <div class="tabWrap">
+                <!--loading-->
+                <ul class="loading"></ul>
+                <!--列表區域-->
+                <ul class="tabList">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/a.jpg" alt="">
+                            <span>君に贈る花がない君君に贈る花がない君君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/b.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/c.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/d.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/e.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/f.jpg" alt="">
+                            <span>君に贈る花がない君</span>
+                        </a>
+                        <div class="ice">
+                            <div class="iceLeft">
+                                <span class="icePic"></span>
+                                <span>1.3W</span>
+                            </div>
+                            <div class="iceRight">
+                                <span class="icePic"></span>
+                                <span>88</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--loading-->
+                <ul class="loading"></ul>
+            </div>
+        </section>
+    </section>
+    </div>
+</div>
+<!--滚动条-->
+<div id="scrollBar"></div>
+</body>
+<script src="js/tools.js"></script>
+<script src="js/transformCss.js"></script>
+<script src="js/dragFlex.js"></script>
+<script src="js/index.js"></script>
+</html>
